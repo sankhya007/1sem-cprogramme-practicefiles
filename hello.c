@@ -1,4 +1,4 @@
-/*#include<stdio.h>
+#include<stdio.h>
 int main()
 {
     int number;
@@ -977,7 +977,7 @@ int main()
     printf("the final seciond prize is: %.2f\n",price[2]+(0.18*price[2]));
     printf("the final third prize is: %.2f\n",price[3]+(0.18*price[3]));
     return 0;
-}*/
+}
 
 
 #include <stdio.h>
