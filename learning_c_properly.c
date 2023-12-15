@@ -604,3 +604,78 @@
 
 
 
+#include<stdio.h>
+int main(){
+
+    int side_1,side_2,side_3;
+    int long_side,sum_side;
+
+    printf("enter the length of the 1st side of the triangle : ");
+    scanf("%d",&side_1);
+    printf("enter the length of the 2nd side of the triangle : ");
+    scanf("%d",&side_2);
+    printf("enter the length of the 3rd side of the triangle : ");
+    scanf("%d",&side_3);
+
+    if (side_1 > side_2 && side_1 > side_3)
+    {
+        long_side = side_1;
+        sum_side = side_2 + side_3;
+        
+        if (sum_side > long_side)
+        {
+            printf("the triangle side input is valid ");
+        }
+        else
+        {
+            printf("invalid input !!");
+        }
+        
+    }
+
+    else if (side_2 > side_1 && side_2 > side_3)
+        {
+            long_side = side_2;
+            sum_side = side_1 + side_3;
+
+            if (sum_side > long_side)
+            {
+                printf("the triangle side input is valid ");
+            }
+            else
+            {
+                printf("invalid input !!");
+            }            
+        }
+    
+    else if (side_3 > side_1 && side_3 > side_2)
+    {
+        long_side = side_3;
+        sum_side = side_1 + side_2;
+
+        if (sum_side > long_side)
+            {
+                printf("the triangle side input is valid ");
+            }
+            else
+            {
+                printf("invalid input !!");
+            }
+    }
+    else if (side_1 == side_2 && side_2 == side_3)
+    {
+        printf("the triangle input is valid");
+    }
+    else if (side_1 == side_2)
+    {
+        /* code */
+    }
+    
+    
+    
+        
+    
+
+
+
+}
