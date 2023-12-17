@@ -604,78 +604,551 @@
 
 
 
-#include<stdio.h>
-int main(){
 
-    int side_1,side_2,side_3;
-    int long_side,sum_side;
+// #include<stdio.h>
+// int main(){
 
-    printf("enter the length of the 1st side of the triangle : ");
-    scanf("%d",&side_1);
-    printf("enter the length of the 2nd side of the triangle : ");
-    scanf("%d",&side_2);
-    printf("enter the length of the 3rd side of the triangle : ");
-    scanf("%d",&side_3);
+//     int side_1,side_2,side_3;
+//     int long_side,sum_side;
 
-    if (side_1 > side_2 && side_1 > side_3)
-    {
-        long_side = side_1;
-        sum_side = side_2 + side_3;
+//     printf("enter the length of the 1st side of the triangle : ");
+//     scanf("%d",&side_1);
+//     printf("enter the length of the 2nd side of the triangle : ");
+//     scanf("%d",&side_2);
+//     printf("enter the length of the 3rd side of the triangle : ");
+//     scanf("%d",&side_3);
+
+//     if (side_1 > side_2 && side_1 > side_3)
+//     {
+//         long_side = side_1;
+//         sum_side = side_2 + side_3;
         
-        if (sum_side > long_side)
-        {
-            printf("the triangle side input is valid ");
-        }
-        else
-        {
-            printf("invalid input !!");
-        }
+//         if (sum_side > long_side)
+//         {
+//             printf("the triangle side input is valid ");
+//         }
+//         else
+//         {
+//             printf("invalid input !!");
+//         }
         
-    }
+//     }
 
-    else if (side_2 > side_1 && side_2 > side_3)
-        {
-            long_side = side_2;
-            sum_side = side_1 + side_3;
+//     else if (side_2 > side_1 && side_2 > side_3)
+//         {
+//             long_side = side_2;
+//             sum_side = side_1 + side_3;
 
-            if (sum_side > long_side)
-            {
-                printf("the triangle side input is valid ");
-            }
-            else
-            {
-                printf("invalid input !!");
-            }            
-        }
+//             if (sum_side > long_side)
+//             {
+//                 printf("the triangle side input is valid ");
+//             }
+//             else
+//             {
+//                 printf("invalid input !!");
+//             }            
+//         }
     
-    else if (side_3 > side_1 && side_3 > side_2)
-    {
-        long_side = side_3;
-        sum_side = side_1 + side_2;
+//     else if (side_3 > side_1 && side_3 > side_2)
+//     {
+//         long_side = side_3;
+//         sum_side = side_1 + side_2;
 
-        if (sum_side > long_side)
-            {
-                printf("the triangle side input is valid ");
-            }
-            else
-            {
-                printf("invalid input !!");
-            }
-    }
-    else if (side_1 == side_2 && side_2 == side_3)
-    {
-        printf("the triangle input is valid");
-    }
-    else if (side_1 == side_2)
-    {
-        /* code */
-    }
+//         if (sum_side > long_side)
+//             {
+//                 printf("the triangle side input is valid ");
+//             }
+//             else
+//             {
+//                 printf("invalid input !!");
+//             }
+//     }
+//     else if (side_1 == side_2 && side_2 == side_3)
+//     {
+//         printf("the triangle input is valid");
+//     }
+//     else if (side_1 == side_2)
+//     {
+//         printf("the triangle side input is valid. ");
+//     }
+//     else if (side_1 == side_3)
+//     {
+//         printf("the triangle side input is valid. ");
+//     }
+//     else if (side_2 == side_3)
+//     {
+//         printf("the triangle side input is valid. ");
+//     }
     
+//     else
+//     {
+//         printf("the triangle side input is valid. ");
+//     }
     
+//     return 0;
     
+// }
+
+
+
+
+
+
+
+// #include <stdio.h>
+
+// int main() {
+//     float side_a, side_b, side_c;
+
+//     printf("Enter the length of side a: ");
+//     scanf("%f", &side_a);
+//     printf("Enter the length of side b: ");
+//     scanf("%f", &side_b);
+//     printf("Enter the length of side c: ");
+//     scanf("%f", &side_c);
+
+//     if (side_a + side_b > side_c || side_a + side_c > side_b || side_b + side_c > side_a)    // checking if the triangle is valid or not. 
+//     {
+//         printf("thr triangle input you did is valid. ");
+
+//         if (side_a == side_b && side_b == side_c)      //all the sides of the trianglke is equal
+//         {
+//             printf("the triangle you entered is a erquilatral triangle. ");
+//         }
+//         else if (side_a == side_b || side_b == side_c || side_c == side_a)      // two of the side of the triangle are aequal that means it could be a right angle one and also a isoscelies one.
+//         {
+//             if (pow(side_a, 2) + pow(side_b, 2) == pow(side_c , 2) ||
+//                 pow(side_b, 2) + pow(side_c, 2) == pow(side_a , 2) ||
+//                 pow(side_c, 2) + pow(side_a, 2) == pow(side_b , 2))
+//             {
+//                 printf("the triangle you entered is a right angle triangle. ");
+//             }
+//             else
+//             {
+//                 printf("the triangle you entered is a isosceles triangle. ");
+//             }
+//         }
+//         else       //this is when none of the lengths are same in the ttriangle either they can be a right angle triangle like down below or....
+//         {
+//             if (pow(side_a, 2) + pow(side_b, 2) == pow(side_c , 2) ||
+//                 pow(side_b, 2) + pow(side_c, 2) == pow(side_a , 2) ||
+//                 pow(side_c, 2) + pow(side_a, 2) == pow(side_b , 2))
+//             {
+//                 printf("the triangle you entered is a right angle triangle.");
+//             }
+//             else       //or they can be a acalene trangle(the left overs of the right angle traiangle)
+//             {
+//                 printf("the triangle you entered is a scalene trangle. ");
+//             }
+//         }
+//     }
+//     else      // when the smaler ones dosent adds up more that the greather one amongst them all. 
+//     {
+//         printf("the data you entered is not a valid trangle");
+//     }
+    
+//     return 0;
+
+// }
+
+
+
+
+
+
+// #include <stdio.h>
+
+// int main() {
+
+//     int red, green, blue;
+//     float white, cyan, magenta, yellow, black;
+
+//     printf("Enter the RGB value of the color you have: ");
+//     scanf("%d%d%d", &red, &green, &blue);
+
+//     // we hate to normalize the values 
+//     float r = red / 255.0;
+//     float g = green / 255.0;
+//     float b = blue / 255.0;
+
+// // we are going to use a nested fmax because the fmax function dosent work with 3 values 
+//     white = fmax(r, fmax(g, b));
+//     cyan = (white - r) / white;
+//     magenta = (white - g) / white;
+//     yellow = (white - b) / white;
+//     black = 1 - white;
+
+//     // Print the result in CMYK format
+//     printf("After calculation, the (CMYK) format of the color you just entered is: %.2f, %.2f, %.2f, %.2f\n", cyan, magenta, yellow, black);
+
+//     return 0;
+// }
+
+
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     float hardness;
+//     float carbon_content;
+//     float tenstile_strength;
+
+//     float perfect1 = 50;  //greater than
+//     float perfect2 = 0.7;   //lesser than
+//     float perfect3 = 5600;    //gteater than
+
+//     printf("enter the hardness of the steel : ");
+//     scanf("%f",&hardness);
+//     printf("enter the carbon_content of the steel : ");
+//     scanf("%f",&carbon_content);
+//     printf("enter the tenstile_strength of the steel : ");
+//     scanf("%f",&tenstile_strength);
+
+//     if (hardness > perfect1 && carbon_content < perfect2)
+//     {
+//         if (tenstile_strength > perfect3)
+//         {
+//             printf("this is a grade 10 steel. ");    //means all of em are right 
+//         }
+//         else
+//         {
+//             printf("this is a grade 9 steel. ");     //means only 1 and 2 are right 
+//         }
+//     }
+//     else if (carbon_content < perfect2 && tenstile_strength > perfect3)
+//     {
+//         printf("this is a grade 8 steel. ");      //only 2 and 3 are right 
+//     }
+//     else if (carbon_content > perfect3 && hardness > perfect1)
+//     {
+//         printf("this is a grade 7 steel. ");        // only 1 and 3 are right 
+//     }
+//     else if (hardness > perfect1 ||
+//              carbon_content < perfect2 ||
+//              tenstile_strength > perfect3)
+//     {
+//         printf("this is a grade 6 steel. ");       // only one of the criterias can be right 
+//     }
+//     else if (hardness < perfect1 ||
+//              carbon_content > perfect2 ||
+//              tenstile_strength < perfect3)
+//     {
+//         printf("this is aa grade 5 steel. ");      //none of those criterias are right 
+//     }
+//     else
+//     {
+//         printf("invalid fucking input like the fuck are you doing nigga not a single one right likee jeezee bitch !! fuck off ");    //you are litrally a  dumb fuck like how !?
+//     }
+    
+//     return 0;
+    
+// }
+
+
+
+
+
+
+
+// //bmi calculaator
+// #include<stdio.h>
+// int main(){
+
+//     float weight;
+//     float height;
+//     float BMI;
+
+//     printf("enter the weight of the person : ");
+//     scanf("%f",&weight);
+//     printf("enter the height of the person (in meters): ");
+//     scanf("%f",&height);
+
+//     BMI = weight / (height * height);
+
+//     printf("the BMI of the person is : %.2f\n",BMI);
+
+//     if (BMI <= 15)
+//     {
+//         printf("your BMI catagory is : starvation");
+//     }
+//     else if (BMI < 17.5 && BMI > 15.1)
+//     {
+//         printf("your BMI catagory is : anorexic");
+//     }
+//     else if (BMI < 18.5 && BMI > 17.6)
+//     {
+//         printf("your BMI catagory is : underweight");
+//     }
+//     else if (BMI < 24.9 && BMI > 18.6)
+//     {
+//         printf("your BMI catagory is : ideal");
+//     }
+//     else if (BMI < 29.9 && BMI > 25)
+//     {
+//         printf("your BMI catagory is : overweight");
+//     }
+//     else if (BMI < 30.9 && BMI > 30)
+//     {
+//         printf("your BMI catagory is : obese");
+//     }
+//     else if (BMI >= 40)
+//     {
+//         printf("your BMI catagory is : morbidly obese");
+//     }
+
+//     return 0;    
+    
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     int i;
+
+//     for ( i = 0; i < 5; i++){
+//         printf("hello world !!\n");
+//     }
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     int i;
+
+//     for ( i = 0; i <= 10; i++)
+//     {
+//         printf("%d\n",i);
+//     }
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+//     int i = 0;
+//     while (i < 11)
+//     {
+//         printf("hello world !! %d\n",i);
+//         i ++;
+//     }
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     for (int i = 0; i <= 50; i++)
+//     {
+//         if (i % 2 == 0)
+//         {
+//             printf("%d\n",i);
+//         }
         
+//     }
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     int i,num,number;
+
+//     printf("enter how many numbers you want to enter : ");
+//     scanf("%d",&num);
+
+//     for ( i = 0; i < num; i++)
+//     {
+//         printf("enter a number : ");
+//         scanf("%d",&number);
+//         if (number % 2 == 0)
+//         {
+//             break;
+//         }
+        
+//     }
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     int sum = 0;
+//     for (int i = 0; i < 10; i++)
+//     {
+//         sum += i;
+//     }
+//     printf("%d",sum);
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     int i,sum = 0;
+//     int number,num;
+
+//     printf("enter how many numbers yu want to add: ");
+//     scanf("%d",&num);
+
+//     for ( i = 0; i < num; i++)
+//     {
+//         printf("enter a number : ");
+//         scanf("%d",&number);
+
+//         sum += number;
+//     }
+
+//     printf("the sum of the numbers you written are : %d",sum);
+//     return 0;
     
+// }
 
 
 
-}
+// #include<stdio.h>
+// int main()
+// {
+//     int i;
+//     double number,sum = 0.0;
+
+//     for ( i = 1; i <= 10; i++)
+//     {
+//         printf("enter the number %d: ",i);
+//         scanf("%lf",&number);
+        
+//     if (number < 0.0)
+//     {
+//         break;
+//     }
+//     sum += number; //sum = sum + number;
+//     }
+//     printf("sum : %lf",sum);
+//     return 0;
+// }
+
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     int i,sum = 0;
+//     int number,num;
+
+//     printf("enter how many numbers you want to add: ");
+//     scanf("%d",&num);
+
+//     for ( i = 0; i < num; i++)
+//     {
+//         printf("enter a number(negatives are going to break the programme): ");
+//         scanf("%d",&number);
+
+//         if (number < 0 )
+//         {
+//             break;
+//         }
+//         sum += number;
+//     }
+
+//     printf("the sum of the numbers you written are : %d",sum);
+//     return 0;
+    
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+
+//     int i,sum = 0;
+//     int number,num;
+
+//     printf("enter how many numbers you want to add: ");
+//     scanf("%d",&num);
+
+//     for ( i = 0; i < num; i++)
+//     {
+//         printf("enter a number(negatives are going to be skipped): ");
+//         scanf("%d",&number);
+
+//         if (number < 0 )
+//         {
+//             continue;;
+//         }
+//         sum += number;
+//     }
+
+//     printf("the sum of the numbers you written are : %d",sum);
+//     return 0;
+    
+// }
+
+
+
+// #include <stdio.h>
+// int main() {
+//     int num, i;
+//     unsigned long long fact = 1;
+
+//     printf("Enter a number to get the factorial : ");
+//     scanf("%d", &num);
+
+//     if (num < 0)
+//         printf("Error! Factorial of a negative number doesn't exist.");
+
+//     else {
+//         for (i = 1; i <= num; ++i) {
+//             fact *= i;
+//         }
+//         printf("Factorial of %d = %llu", num, fact);
+//     }
+//     return 0;
+// }
+
+
+
+// #include<stdio.h>
+// int main(){
+//     int est_time = 40;
+//     int overtime;
+//     int total_time;
+//     int rate = 12;
+//     int payment;
+//     int i,count;
+
+//     printf("how many workers are there : ");
+//     scanf("%d",&count);
+
+//     for (i = 0; i < count; i++)
+//     {
+//         printf("enter how many hours the worker has worked in the week : ");
+//         scanf("%d",&total_time);
+
+//         overtime = total_time - est_time;
+//         payment = overtime * rate;
+
+//         printf("the payment that employe gets for the over time is : %d\n",payment);
+//     }
+    
+//     return 0;
+
+// }
+
+
+
